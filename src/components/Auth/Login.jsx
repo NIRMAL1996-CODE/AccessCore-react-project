@@ -21,9 +21,8 @@ const handleSubmit=(event)=>{
 
   return (
     <>
-      <div className='flex justify-center items-center'>
-        <div className=' bg-purple-200 h-[600px] w-[400px] m-[20px] rounded-2xl flex flex-col justify-center items-center'>
-        <h1 className='font-semibold'>Login</h1>
+      <div className='flex justify-center items-center  text-black h-screen'>
+        <div className=' border-white-600 bg-purple-200 h-[400px] w-[400px] m-[20px] rounded-2xl flex flex-col justify-center items-center'>
         <form onSubmit={handleSubmit} className='flex flex-col justify-center items-center'>
 
           <input name='email'
@@ -31,7 +30,7 @@ const handleSubmit=(event)=>{
            onChange={handlechange}
            value={email}
            required
-           className='flex flex-col border-white border-2 m-[10px] p-[10px] bg-transparent outline-none rounded-xl w-[350px] cursor-pointer' 
+           className='flex flex-col border-white-600 border-2 m-[10px] p-[10px] bg-transparent outline-none rounded-2xl w-[350px] cursor-pointer' 
            type="email" 
            placeholder='Enter Your Email' />
 
@@ -40,7 +39,7 @@ const handleSubmit=(event)=>{
            onChange={handlechange}
            value={password}
            required
-           className='flex flex-col border-white border-2 m-[10px] p-[10px] bg-transparent outline-none rounded-xl w-[350px] cursor-pointer ' 
+           className='flex flex-col border-white-600 border-2 m-[10px] p-[10px] bg-transparent outline-none rounded-2xl w-[350px] cursor-pointer ' 
            type="password" 
            placeholder='Enter Password' />
 
@@ -53,7 +52,7 @@ const handleSubmit=(event)=>{
             <button className='text-red-600 cursor-pointer'>Forget Password</button>
             </div>
           </div>
-          <button type='submit' className='text-2xl font-semibold text-black bg-white hover:bg-yellow-200     transition-colors duration-300 m-2 py-2 px-6 rounded-xl shadow-lg w-[150px] cursor-pointer'>Login
+          <button type='submit' className='text-2xl font-semibold bg-amber-200 text-black border-white-600  hover:bg-white hover:text-black transition-colors duration-300 m-2 py-2 px-6 rounded-2xl shadow-lg w-[150px] cursor-pointer'>Login
           </button>
         </form>
       </div>
